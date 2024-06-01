@@ -1,80 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejos Generales</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Agrega estilos personalizados -->
     <style>
         .section-card {
             border-radius: 20px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 8px rgba(118, 116, 116, 0.689);
             margin-bottom: 20px;
             padding: 20px;
         }
+
+        .section-card2 {
+            border-radius: 10px;
+            box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .sidebar2 {
+            box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
+            margin-bottom: 10px;
+            padding: 10px;
+        }
     </style>
 </head>
+
+
 <body style="background-color: #333;"> <!-- Aplica el color de fondo gris oscuro -->
     <div class="container-fluid">
         <div class="row">
-            <div id="sidebar" class="col-md-3 col-sm-4 bg-dark sidebar">
-                <button id="ocultar" class="btn btn-outline-light toggle-sidebar">☰</button>
+            <div id="sidebar" class="col-md-2 col-sm-3 bg-dark  sidebar ">
+                <button id="ocultar" class="btn btn-outline-light toggle-sidebar ">☰</button>
                 <ul class="nav flex-column">
                     <!-- Añade iconos para representar visualmente cada sección -->
-                    <li class="nav-item">
-                        <a href="inicio.html" class="nav-link text-white">Inicio <i class="fas fa-home"></i></a>
+                    <li class="nav-item  ">
+                        <a href="index.html" class="nav-link text-white section-card2">Inicio <i
+                                class="fas fa-home"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="Consejos_Generales.html" class="nav-link text-white">Consejos Generales <i class="fas fa-lightbulb"></i></a>
+                        <a href="Consejos_Generales.html" class="nav-link text-white section-card2">Consejos Generales
+                            <i class="fas fa-lightbulb"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="pagina2.html" class="nav-link text-white">Servicios <i class="fas fa-cogs"></i></a>
+                        <a href="segurudad.html" class="nav-link text-white section-card2">Seguridad <i
+                                class="fas fa-cogs"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="pagina3.html" class="nav-link text-white">Contacto <i class="fas fa-envelope"></i></a>
+                        <a href="pagina3.html" class="nav-link text-white section-card2">Contacto <i
+                                class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>
-            <div id="content" class="col-md-9 col-sm-8 content">
-                <button id="mostrar" class="btn btn-dark toggle-sidebar" style="display: none;">☰</button>
+            <div id="content" class="col-md-10 col-sm-9 content">
+                <button id="mostrar" class="btn btn-outline-light toggle-sidebar" style="display: none;">☰</button>
                 <div class="bg-dark text-white p-3 rounded mb-3">
-                    <h1>Bienvenido a mi página</h1>
+                    <h1>Cosejos Generales</h1>
                 </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <!-- Utiliza imágenes de alta calidad relacionadas con el contenido -->
-                        <img src="imagen1.jpg" alt="Imagen 1" class="img-fluid rounded mb-3">
-                        <p>Contenido principal de Inicio...</p>
-                    </div> 
-                    <div class="col-md-6">
+                <div class="row" style="background-color: #333;">
+                    <div class="text-white">
+                        <P>Por qué es importante la seguridad en línea?<br>
+                            La seguridad en línea es vital porque:
+                            <li>Protege tu información personal: Tus datos, como nombres, direcciones y números de
+                                tarjeta de crédito, pueden ser robados y usados para actividades fraudulentas.</li>
+                            <li> Evita el robo de identidad: Los hackers pueden usar tu información para hacerse pasar
+                                por ti y cometer delitos.</li>
+                            <li> Previene el acceso no autorizado: Mantiene a los intrusos fuera de tus cuentas y
+                                dispositivos. </li>
+                        </P>
+                    </div>
+                    <div class="col-md-11">
                         <!-- Utiliza tarjetas con bordes redondeados para cada sección -->
                         <div class="section-card bg-secondary text-white bg-dark">
-                            <h2>Sección de Consejos Generales</h2>
-                            <p>Contenido de la sección ...</p>
+                            <h2>Mantén tu software actualizado:</h2>
+                            <div style="overflow: hidden;">
+                                <img src="img/actualizado.jpg" alt="Imagen 1" class="img-fluid rounded mb-1"
+                                    style="width: 300px; float: right; margin-right: 10px;">
+                                <p>Esto significa asegurarte de tener las últimas versiones de tu sistema operativo,
+                                    navegador web y aplicaciones. Las actualizaciones ayudan a proteger tu dispositivo
+                                    cerrando posibles brechas que los hackers podrían usar para entrar.</p>
+                            </div>
                         </div>
-                        <div class="section-card bg-secondary text-white">
-                            <h2>Sección de Protección de Contraseñas</h2>
-                            <p>Contenido de la sección</p>
+                        <div class="section-card bg-secondary text-white bg-dark">
+                            <h2>Usa un buen antivirus</h2>
+                            <div style="overflow: hidden;">
+                                <img src="img/ant.webp" alt="Imagen 2" class="img-fluid rounded mb-1"
+                                    style="width: 300px; float: right; margin-right: 10px;">
+                                <p>Instala un programa de antivirus confiable y asegúrate de que esté siempre
+                                    actualizado
+                                    para protegerte contra virus y otros programas maliciosos. Escanea tu dispositivo
+                                    regularmente para detectar posibles amenazas.</p>
+                            </div>
+
                         </div>
-                        <div class="section-card bg-secondary text-white">
-                            <h2>Sección Seguridad en Redes Sociales</h2>
-                            <p>Contenido de la sección...</p>
+                        <div class="section-card bg-secondary text-white bg-dark">
+                            <h2>Ten cuidado con los correos electrónicos sospechosos</h2>
+                            <div style="overflow: hidden;">
+                                <img src="img/correo1.png" alt="Imagen 3" class="img-fluid rounded mb-1"
+                                    style="width: 300px; float: right; margin-right: 10px;">
+                                <li class="text-align">Evita abrir archivos adjuntos o hacer clic en enlaces de correos
+                                    electrónicos que
+                                    provengan de remitentes desconocidos o que te parezcan sospechosos. Podrían contener
+                                    virus o malware.</li>
+                                <br>
+                                <li> Evita abrir archivos adjuntos o
+                                    hacer clic en enlaces de correos electrónicos que provengan de remitentes
+                                    desconocidos o que te parezcan sospechosos.</li>
+                            </div>
+
                         </div>
-                        <div class="section-card bg-secondary text-white">
-                            <h2>Sección Protección contra Malware</h2>
-                            <p>Contenido de la sección...</p>
+                        <div class="section-card bg-secondary text-white bg-dark">
+                            <h2>Usa la autenticación de dos factores (2FA)</h2>
+                            <div style="overflow: hidden;">
+                                <p>
+                                    Añade una capa extra de seguridad a tus
+                                    cuentas importantes activando la autenticación de dos factores siempre que sea
+                                    posible. Esto significa que necesitarás un código adicional además de tu contraseña
+                                    para iniciar sesión.
+                                </p>
+
+                            </div>
                         </div>
-                        <div class="section-card bg-secondary text-white">
-                            <h2>Sección Recursos y Enlaces Útiles</h2>
-                            <p>Contenido de la sección...</p>
+                        <div class="section-card bg-secondary text-white bg-dark">
+                            <h2>Descarga aplicaciones de fuentes confiables</h2>
+                            <div style="overflow: hidden;">
+
+                                <p> Evita descargar e instalar programas de sitios web no oficiales. Estos programas
+                                    pueden contener malware que comprometa la seguridad de tu dispositivo.
+
+                                </p>
+                            </div>
                         </div>
                         <img src="imagen2.jpg" alt="Imagen 2" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -82,4 +148,5 @@
     <!-- Añade la librería Font Awesome para los iconos -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
+
 </html>
