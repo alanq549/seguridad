@@ -15,13 +15,20 @@
             margin-bottom: 20px;
             padding: 20px;
         }
+
         .section-card2 {
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 7px;
+            padding: 8px;
         }
-       
+
+        .section-cardbar {
+            border-radius: 5px;
+            box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
+            margin-bottom: 5px;
+            padding: 5px;
+        }
     </style>
 
 </head>
@@ -33,24 +40,27 @@
                 <button id="ocultar" class="btn btn-outline-light toggle-sidebar">☰</button>
                 <ul class="nav flex-column">
                     <!-- Añade iconos para representar visualmente cada sección -->
-                    <li class="nav-item  " >
-                        <a href="inicio.html" class="nav-link text-white section-card2">Inicio <i class="fas fa-home"></i></a>
+                    <li class="nav-item  ">
+                        <a href="index.html" class="nav-link text-white section-card2">Inicio <i
+                                class="fas fa-home"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="Consejos_Generales.html" class="nav-link text-white section-card2">Consejos Generales <i
-                                class="fas fa-lightbulb"></i></a>
+                        <a href="Consejos_Generales.html" class="nav-link text-white section-card2">Consejos Generales
+                            <i class="fas fa-lightbulb"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="segurudad.html" class="nav-link text-white section-card2">Servicios <i class="fas fa-cogs"></i></a>
+                        <a href="segurudad.html" class="nav-link text-white section-card2">Seguridad <i
+                                class="fas fa-cogs"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="pagina3.html" class="nav-link text-white section-card2">Contacto <i class="fas fa-envelope"></i></a>
+                        <a href="pagina3.html" class="nav-link text-white section-card2">Contacto <i
+                                class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>
             <div id="content" class="col-md-10 col-sm-9 content">
                 <button id="mostrar" class="btn btn-outline-light toggle-sidebar" style="display: none;">☰</button>
-                <div class="bg-dark  text-white p-3 rounded mb-3">
+                <div class="bg-dark  text-white p-3 rounded mb-3 section-card">
                     <h1>Inicio</h1>
                 </div>
                 <div class="row" style="background-color: #333;">
@@ -60,26 +70,31 @@
                             Bienvenido a nuestro sitio web dedicado a la seguridad en línea. Este espacio ha sido creado
                             con el propósito de brindar información clara y accesible sobre cómo protegerse en el mundo
                             digital.
+                        </p>
+                        <img src="img/1.gif" alt="Imagen 1" class="img-fluid rounded mb-2"style="width: 800px;">
+
+                        <p style="text-align: justify;">
                             La seguridad en línea es esencial en la actualidad, donde cada vez más hacemos uso de cosas
                             digitales en nuestras vidas . Aquí encontrarás una serie de páginas que cubren diversos
                             temas cruciales para mantenerte seguro.
-                            En la sección de Inicio, te ofrecemos una introducción al sitio y su propósito.
-                        <p>
-                            <img src="img/1.gif" alt="Imagen 1" class="img-fluid rounded mb-2">
+                        </p>
+                        <img src="img/security-background-eur44zfmwtr5rmxc.jpg" alt="Imagen 1" class="img-fluid rounded mb-2"style="width: 800px;">
 
                     </div>
                     <div class="col-md-6">
                         <!-- Utiliza tarjetas con bordes redondeados para cada sección -->
                         <div class="section-card bg-secondary text-white text-center bg-dark">
                             <h2>Consejos Generales</h2>
-                            <p style="text-align: justify;"></p>En Consejos Generales de Seguridad, encontrarásinformación básica y consejos prácticos
-                                para mantenerte seguro en línea. La sección de
-                                Protección de Contraseñas te guiará en la creación y mantenimiento de contraseñas
-                                seguras, un paso fundamental para proteger tus cuentas.</p>
+                            <p style="text-align: justify;"></p>En Consejos Generales de Seguridad,
+                            encontrarásinformación básica y consejos prácticos
+                            para mantenerte seguro en línea. La sección de
+                            Protección de Contraseñas te guiará en la creación y mantenimiento de contraseñas
+                            seguras, un paso fundamental para proteger tus cuentas.</p>
                         </div>
                         <div class="section-card bg-secondary text-white text-center bg-dark">
                             <h2>Protección de Contraseñas</h2>
-                            <p style="text-align: justify;"> Aqui encontrarás consejos y mejores prácticas para crear y mantener contraseñas seguras.
+                            <p style="text-align: justify;"> Aqui encontrarás consejos y mejores prácticas para crear y
+                                mantener contraseñas seguras.
                                 Proteger tus contraseñas es fundamental para mantener tus cuentas en línea seguras.
                                 Aprenderás cómo generar contraseñas fuertes, cómo gestionarlas de manera segura y cómo
                                 identificar posibles vulnerabilidades en tu enfoque de gestión de contraseñas.</p>
@@ -93,7 +108,8 @@
                         </div>
                         <div class="section-card bg-secondary text-white  text-center bg-dark">
                             <h2>Sección Protección contra Malware</h2>
-                            <p style="text-align: justify;">En la sección de Protección contra Malware, aprenderás sobre las diferentes formas de
+                            <p style="text-align: justify;">En la sección de Protección contra Malware, aprenderás sobre
+                                las diferentes formas de
                                 malware, incluidos virus, spyware, ransomware y troyanos, y cómo pueden afectar a tus
                                 dispositivos y datos. Te proporcionaremos consejos prácticos sobre cómo prevenir
                                 infecciones por malware, cómo detectar la presencia de malware en tus dispositivos y
@@ -101,7 +117,8 @@
                         </div>
                         <div class="section-card bg-secondary text-white  text-center bg-dark">
                             <h2>Sección Recursos y Enlaces Útiles</h2>
-                            <p style="text-align: justify;"> Recursos y Enlaces Útiles, encontrarás enlaces a herramientas, software y artículos
+                            <p style="text-align: justify;"> Recursos y Enlaces Útiles, encontrarás enlaces a
+                                herramientas, software y artículos
                                 adicionales que te ayudarán a profundizar en el tema de la seguridad en línea. Este
                                 sitio está diseñado para ser accesible a todos, independientemente de su conocimiento
                                 técnico, y esperamos que encuentres la información útil y fácil de entender.</p>

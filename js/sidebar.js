@@ -2,17 +2,24 @@
 const sidebar = document.getElementById('sidebar');
 const toggleButton = document.getElementById('ocultar');
 const mostrarButton = document.getElementById('mostrar');
+const contenido = document.getElementById('content');
 
-// Agregar evento de clic al botón "☰/ocultar"
+// Agregar evento de clic al botón "☰/ocultar"             
 toggleButton.addEventListener('click', () => {
   sidebar.classList.add('d-none');
   toggleButton.style.display = 'none';
   mostrarButton.style.display = 'block';
+  // Modificar las clases de contenido al ocultar la barra lateral
+  contenido.classList.remove('col-md-10', 'col-sm-9');
+  contenido.classList.add('col-md-15', 'col-sm-13');
+
 });
 
-// Agregar evento de clic al botón "☰/mostrar"
+// Agregar evento de clic al botón "mostrar"
 mostrarButton.addEventListener('click', () => {
   sidebar.classList.remove('d-none');
-  mostrarButton.style.display = 'none';
   toggleButton.style.display = 'block';
-});
+  mostrarButton.style.display = 'none';
+  // Modificar las clases de contenid5o al mostrar la barra lateral
+  contenido.classList.remove('col-md-15', 'col-sm-9');
+  contenido.classList.add('col-md-10', 'col-sm-9');});
