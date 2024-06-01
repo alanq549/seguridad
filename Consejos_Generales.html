@@ -17,16 +17,17 @@
         }
 
         .section-card2 {
-            border-radius: 10px;
+            border-radius: 8px;
             box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 7px;
+            padding: 8px;
         }
 
-        .sidebar2 {
+        .section-cardbar {
+            border-radius: 5px;
             box-shadow: 3px 5px 9px rgba(118, 116, 116, 0.689);
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-bottom: 5px;
+            padding: 5px;
         }
     </style>
 </head>
@@ -35,8 +36,10 @@
 <body style="background-color: #333;"> <!-- Aplica el color de fondo gris oscuro -->
     <div class="container-fluid">
         <div class="row">
-            <div id="sidebar" class="col-md-2 col-sm-3 bg-dark  sidebar ">
-                <button id="ocultar" class="btn btn-outline-light toggle-sidebar ">☰</button>
+            <div id="sidebar" class="col-md-2 col-sm-3 bg-dark  sidebar">
+                <button id="ocultar" class="btn btn-outline-light toggle-sidebar">☰</button>
+                <br>
+                <br>
                 <ul class="nav flex-column">
                     <!-- Añade iconos para representar visualmente cada sección -->
                     <li class="nav-item  ">
@@ -48,18 +51,26 @@
                             <i class="fas fa-lightbulb"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="segurudad.html" class="nav-link text-white section-card2">Seguridad <i
+                        <a href="segurudad.html" class="nav-link text-white section-card2">Protección de Contraseñas <i
                                 class="fas fa-cogs"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a href="pagina3.html" class="nav-link text-white section-card2">Contacto <i
+                        <a href="Seguridad en Redes Sociales.html" class="nav-link text-white section-card2">Seguridad en Redes Sociales <i
+                                class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Protección contra Malware.html" class="nav-link text-white section-card2">Protección contra Malware <i
+                                class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recursos.html" class="nav-link text-white section-card2">Recursos y Enlaces Útiles <i
                                 class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
             </div>
             <div id="content" class="col-md-10 col-sm-9 content">
                 <button id="mostrar" class="btn btn-outline-light toggle-sidebar" style="display: none;">☰</button>
-                <div class="bg-dark text-white p-3 rounded mb-3">
+                <div class="bg-dark  text-white p-3 rounded mb-3 section-card">
                     <h1>Cosejos Generales</h1>
                 </div>
                 <div class="row" style="background-color: #333;">
@@ -74,7 +85,7 @@
                                 dispositivos. </li>
                         </P>
                     </div>
-                    <div class="col-md-11">
+                    <div class="col-md-10">
                         <!-- Utiliza tarjetas con bordes redondeados para cada sección -->
                         <div class="section-card bg-secondary text-white bg-dark">
                             <h2>Mantén tu software actualizado:</h2>
@@ -117,6 +128,7 @@
                         <div class="section-card bg-secondary text-white bg-dark">
                             <h2>Usa la autenticación de dos factores (2FA)</h2>
                             <div style="overflow: hidden;">
+
                                 <p>
                                     Añade una capa extra de seguridad a tus
                                     cuentas importantes activando la autenticación de dos factores siempre que sea
@@ -129,14 +141,15 @@
                         <div class="section-card bg-secondary text-white bg-dark">
                             <h2>Descarga aplicaciones de fuentes confiables</h2>
                             <div style="overflow: hidden;">
-
+                                <img src="img/Aplicaciones-fuera-de-Google-Play.jpg" alt="Imagen 4"
+                                    class="img-fluid rounded mb-1"
+                                    style="width: 400px; float: right; margin-right: 10px;">
                                 <p> Evita descargar e instalar programas de sitios web no oficiales. Estos programas
                                     pueden contener malware que comprometa la seguridad de tu dispositivo.
 
                                 </p>
                             </div>
                         </div>
-                        <img src="imagen2.jpg" alt="Imagen 2" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
