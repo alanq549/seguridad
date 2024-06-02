@@ -124,43 +124,6 @@
     <script src="js/sidebar.js"></script>
     <!-- Añade la librería Font Awesome para los iconos -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-     const sidebar = document.getElementById('sidebar');
-     const toggleButton = document.getElementById('ocultar');
-     const mostrarButton = document.getElementById('mostrar');
-     const contenido = document.getElementById('content');
- 
-     // Ocultar el sidebar por defecto
-     sidebar.classList.add('d-none');
-     toggleButton.style.display = 'none';
-     mostrarButton.style.display = 'block';
-     // Modificar las clases de contenido al ocultar la barra lateral
-     contenido.classList.remove('col-md-10', 'col-sm-9');
-     contenido.classList.add('col-md-15', 'col-sm-13');
- 
-     // Agregar evento de clic al botón "☰/ocultar"             
-     toggleButton.addEventListener('click', () => {
-         sidebar.classList.add('d-none');
-         toggleButton.style.display = 'none';
-         mostrarButton.style.display = 'block';
-         // Modificar las clases de contenido al ocultar la barra lateral
-         contenido.classList.remove('col-md-10', 'col-sm-9');
-         contenido.classList.add('col-md-15', 'col-sm-13');
-     });
- 
-     // Agregar evento de clic al botón "mostrar"
-     mostrarButton.addEventListener('click', () => {
-         sidebar.classList.remove('d-none');
-         toggleButton.style.display = 'block';
-         mostrarButton.style.display = 'none';
-         // Modificar las clases de contenido al mostrar la barra lateral
-         contenido.classList.remove('col-md-15', 'col-sm-9');
-         contenido.classList.add('col-md-10', 'col-sm-9');
-     });
- });
- 
-     </script>
 </body>
 
 </html>
