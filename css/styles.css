@@ -1,6 +1,9 @@
 body {
     background-color: #333; /* Color gris oscuro */
 }
+.d-none {
+    display: none !important;
+}
 
 .sidebar {
     position: absolute;

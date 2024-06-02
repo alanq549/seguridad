@@ -2,17 +2,12 @@
 <html lang="es">
 
 <head>
-    <!-- Meta tags para especificar el juego de caracteres y la escala de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título de la página -->
     <title>Inicio</title>
-    <!-- Enlaces a los archivos CSS de Bootstrap y estilos personalizados -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- Estilos internos -->
     <style>
-        /* Estilos para las tarjetas de las secciones */
         .section-card {
             border-radius: 20px;
             box-shadow: 0px 4px 8px rgba(118, 116, 116, 0.689);
@@ -36,19 +31,16 @@
     </style>
 </head>
 
-<body style="background-color: #333;"> <!-- Color de fondo gris oscuro -->
+<body style="background-color: #333;">
     <div class="container-fluid">
         <div class="row">
             <!-- Barra lateral -->
-            <div id="sidebar" class="col-md-2 col-sm-3 bg-dark sidebar">
-                <!-- Botón para ocultar la barra lateral -->
+            <div id="sidebar" class="col-md-2 col-sm-3 bg-dark sidebar ">
                 <button id="ocultar" class="btn btn-outline-light toggle-sidebar">☰</button>
                 <br><br>
-                <!-- Menú de navegación -->
                 <ul class="nav flex-column">
-                    <!-- Enlaces de navegación con iconos de Font Awesome -->
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link text-white section-card2">Inicio <i class="fas fa-home"></i></a>
+                        <a id="inicio_click" href="index.html" class="nav-link text-white section-card2">Inicio <i class="fas fa-home"></i></a>
                     </li>
                     <li class="nav-item">
                         <a href="Consejos_Generales.html" class="nav-link text-white section-card2">Consejos Generales <i class="fas fa-lightbulb"></i></a>
@@ -67,23 +59,18 @@
                     </li>
                 </ul>
             </div>
-            <!-- Contenido principal -->
             <div id="content" class="col-md-10 col-sm-9 content">
-                <!-- Botón para mostrar la barra lateral (oculto por defecto) -->
                 <button id="mostrar" class="btn btn-outline-light toggle-sidebar" style="display: none;">☰</button>
-                <!-- Tarjeta de bienvenida -->
                 <div class="bg-dark text-white p-3 rounded mb-3 section-card">
                     <h1>Inicio</h1>
                 </div>
                 <div class="row" style="background-color: #333;">
                     <div class="col-md-6 text-white">
-                        <!-- Texto de bienvenida y descripción -->
                         <p style="text-align: justify;">
                             Bienvenido a nuestro sitio web dedicado a la seguridad en línea. Este espacio ha sido creado
                             con el propósito de brindar información clara y accesible sobre cómo protegerse en el mundo
                             digital.
                         </p>
-                        <!-- Imágenes relacionadas con el contenido -->
                         <img src="img/1.gif" alt="Imagen 1" class="img-fluid rounded mb-2" style="width: 800px;">
                         <p style="text-align: justify;">
                             La seguridad en línea es esencial en la actualidad, donde cada vez más hacemos uso de cosas
@@ -92,7 +79,6 @@
                         </p>
                         <img src="img/security-background-eur44zfmwtr5rmxc.jpg" alt="Imagen 1" class="img-fluid rounded mb-2" style="width: 800px;">
                     </div>
-                    <!-- Secciones con tarjetas informativas -->
                     <div class="col-md-6">
                         <div class="section-card bg-secondary text-white text-center bg-dark">
                             <h2>Consejos Generales</h2>
@@ -139,10 +125,46 @@
             </div>
         </div>
     </div>
-    <!-- Scripts de JavaScript: Bootstrap, script para la barra lateral y Font Awesome -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/sidebar.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+       document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('sidebar');
+    const toggleButton = document.getElementById('ocultar');
+    const mostrarButton = document.getElementById('mostrar');
+    const contenido = document.getElementById('content');
+
+    // Ocultar el sidebar por defecto
+    sidebar.classList.add('d-none');
+    toggleButton.style.display = 'none';
+    mostrarButton.style.display = 'block';
+    // Modificar las clases de contenido al ocultar la barra lateral
+    contenido.classList.remove('col-md-10', 'col-sm-9');
+    contenido.classList.add('col-md-15', 'col-sm-13');
+
+    // Agregar evento de clic al botón "☰/ocultar"             
+    toggleButton.addEventListener('click', () => {
+        sidebar.classList.add('d-none');
+        toggleButton.style.display = 'none';
+        mostrarButton.style.display = 'block';
+        // Modificar las clases de contenido al ocultar la barra lateral
+        contenido.classList.remove('col-md-10', 'col-sm-9');
+        contenido.classList.add('col-md-15', 'col-sm-13');
+    });
+
+    // Agregar evento de clic al botón "mostrar"
+    mostrarButton.addEventListener('click', () => {
+        sidebar.classList.remove('d-none');
+        toggleButton.style.display = 'block';
+        mostrarButton.style.display = 'none';
+        // Modificar las clases de contenido al mostrar la barra lateral
+        contenido.classList.remove('col-md-15', 'col-sm-9');
+        contenido.classList.add('col-md-10', 'col-sm-9');
+    });
+});
+
+    </script>
 </body>
 
 </html>
